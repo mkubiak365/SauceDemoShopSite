@@ -45,7 +45,7 @@ class OrderPage:
         assert price == order_locators.OrderInfo.price, 'No price'
 
         time.sleep(3)
-        allure.attach(self.driver.get_screenshot_as_png(), name="login", attachment_type=AttachmentType.PNG)
+        allure.attach(self.driver.get_screenshot_as_png(), name="basket", attachment_type=AttachmentType.PNG)
 
         self.driver.find_element(*self.checkout).click()
 
